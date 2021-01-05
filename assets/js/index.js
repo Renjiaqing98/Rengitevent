@@ -33,7 +33,7 @@ function getUserInfo() {
         },
 
     })
-    
+
 
 }
 //封装渲染头像函数
@@ -49,6 +49,6 @@ function renderAvatar(user) {
         $('.layui-nav-img').hide();
         //获取用户名第一个字
         var flast = name[0].toUpperCase();
-        $('.text-avatar').attr(flast).show();
+        $('.text-avatar').html(flast).show();
     }
 }
